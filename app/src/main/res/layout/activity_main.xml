@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9ecc4"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <Spinner
+        android:layout_above="@+id/upload"
+        android:id="@+id/spinner"
+        android:gravity="center"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_centerInParent="true"
+        android:id="@+id/upload"
+        android:text="upload pdf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:padding="15dp"
+        android:background="@drawable/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginRight="13dp"
+        android:layout_below="@+id/spinner"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="3dp"
+            android:id="@+id/text1"
+            android:text="Hi"
+            android:textColor="#393737"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:inputType="number"
+            android:gravity="center"
+            android:id="@+id/edit1"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:gravity="center"
+            android:text="Hi"
+            android:textColor="#393737"
+            android:layout_marginLeft="4dp"
+            android:id="@+id/text2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:inputType="number"
+
+            android:gravity="center"
+            android:id="@+id/edit2"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/proceed_btn"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="Proceed"
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:background="#388E3C"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Speech Maker</string>
+    <string-array name="items">
+        <item>ALL PAGES</item>
+        <item>SOME PAGES</item>
+        <item>ONE PAGE</item>
+    </string-array>
+</resources>
