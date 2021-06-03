@@ -12,7 +12,6 @@
         android:layout_above="@+id/upload"
         android:id="@+id/spinner"
         android:gravity="center"
-        android:backgroundTint="@color/colorBackground"
         android:layout_marginHorizontal="40dp"
         android:layout_marginBottom="60dp"
         android:layout_width="match_parent"

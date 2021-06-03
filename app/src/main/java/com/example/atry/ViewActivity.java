@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,7 +21,8 @@ import java.io.InputStream;
 import java.util.Locale;
 
 public class ViewActivity extends AppCompatActivity {
-    Button buttonNext,btnPlay;
+    Button buttonNext;
+    ImageView btnPlay;
     String str,etn2Text;
     TextView textView,counting;
     int i=2;

@@ -1,57 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackground"
-    android:orientation="vertical"
+
     tools:context=".ViewActivity">
 
-    <Button
-        android:layout_margin="20dp"
-        android:id="@+id/next"
-        android:textColor="@android:color/white"
-        android:text="NEXT"
-        android:background="@color/colorPrimary"
-        android:layout_width="match_parent"
-        android:layout_gravity="center"
-        android:layout_height="wrap_content"/>
-    <Button
-        android:id="@+id/play"
-        android:text="Play"
-        android:textColor="@android:color/white"
-        android:background="@color/colorPrimary"
-        android:layout_marginBottom="10dp"
-        android:layout_gravity="center_horizontal"
+    <TextView
+        android:id="@+id/counting"
+        android:text="PAGE 1"
+        android:textStyle="normal"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    <ScrollView
-        android:id="@+id/scrollView"
+    <Button
+        android:id="@+id/topBtn"
+        android:layout_below="@+id/counting"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@android:color/white"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <LinearLayout
-            android:orientation="vertical"
+        android:layout_height="4dp" />
+    <RelativeLayout
+        android:id="@+id/relay"
+        android:layout_below="@+id/topBtn"
+        android:layout_above="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/leftBtn"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/white"
+            android:layout_marginLeft="20dp"
+            />
+        <ScrollView
+            android:id="@+id/scrollView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/counting"
-                android:text="PAGE 1"
-                android:textStyle="italic"
-                android:textColor="@color/colorPrimary"
-                android:textSize="30dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-
-            <TextView
-                android:layout_marginHorizontal="10dp"
-                android:textSize="18sp"
-                android:textColor="@android:color/tertiary_text_dark"
-                android:id="@+id/tvText"
+            <LinearLayout
+                android:layout_marginHorizontal="30dp"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-        </LinearLayout>
-    </ScrollView>
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/play"
+                    android:src="@drawable/play"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"/>
 
-</LinearLayout>
+                <TextView
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/tvText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+        <Button
+            android:id="@+id/rightBtn"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/white"
+            android:layout_marginRight="20dp"
+            />
+       </RelativeLayout>
+
+
+    <Button
+        android:layout_below="@+id/relay"
+        android:layout_above="@+id/next"
+        android:layout_marginBottom="4dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/next"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@android:color/white"
+        android:text="NEXT"
+        android:background="@drawable/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="40dp"/>
+
+
+</RelativeLayout>
