@@ -8,24 +8,19 @@
     android:layout_height="match_parent"
     tools:context=".SelectActivity">
 
-    <Button
+    <ImageView
         android:id="@+id/type"
-        android:layout_width="140dp"
-        android:layout_height="80dp"
-        android:background="#388E3C"
-        android:paddingHorizontal="35dp"
-        android:paddingVertical="15dp"
-        android:text="Type"
-        android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/typeimg"
+
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
 
-        app:layout_constraintHorizontal_bias="0.209"
-        app:layout_constraintVertical_bias="0.29" />
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintVertical_bias="0.359" />
 
     <TextView
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,22 +33,17 @@
         android:textSize="30dp"
         android:textColor="@android:color/black"/>
 
-    <Button
+    <ImageView
         android:id="@+id/pdf"
-        android:layout_width="140dp"
-        android:layout_height="80dp"
-        android:background="#388E3C"
-        android:paddingHorizontal="35dp"
-        android:paddingVertical="15dp"
-        android:text="PDF"
-        android:textAllCaps="false"
-        android:textColor="@android:color/white"
-        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pdfimg"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
 
-        app:layout_constraintHorizontal_bias="0.782"
-        app:layout_constraintVertical_bias="0.732" />
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintVertical_bias="0.638" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,42 +7,81 @@
     android:background="@color/colorBackground"
     android:orientation="vertical"
     tools:context=".TypeActivity">
-    <ScrollView
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="4dp" />
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <LinearLayout
-            android:orientation="vertical"
+        <Button
+            android:id="@+id/leftBtn"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+             android:layout_alignParentLeft="true"
+            android:background="@android:color/white"
+            android:layout_marginLeft="20dp"
+            />
+        <ScrollView
+            android:layout_centerHorizontal="true"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <EditText
-                android:layout_margin="40dp"
-                android:id="@+id/editText"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-            <Button
-                android:id="@+id/btnStart"
-                android:text="Start"
-                android:textStyle="bold"
-                android:background="@color/colorPrimary"
-                android:textColor="@android:color/white"
-                android:layout_gravity="center"
-                android:textSize="20dp"
-                android:layout_width="100dp"
-                android:layout_height="60dp"
-                android:layout_marginBottom="20dp"/>
-            <Button
-                android:id="@+id/btnStop"
-                android:text="Stop"
-                android:textStyle="bold"
-                android:background="@color/colorPrimary"
-                android:textColor="@android:color/white"
-                android:layout_marginBottom="20dp"
-                android:layout_gravity="center"
-                android:textSize="20dp"
-                android:layout_width="100dp"
-                android:layout_height="60dp"/>
-        </LinearLayout>
-    </ScrollView>
+                android:layout_height="wrap_content">
+                <EditText
+                    android:layout_margin="40dp"
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/btnStart"
+                        android:text="Start"
+                        android:textStyle="bold"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@android:color/white"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="60dp"
+                        />
+                    <Button
+                        android:id="@+id/btnStop"
+                        android:text="Stop"
+                        android:textStyle="bold"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@android:color/white"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_gravity="center"
+                        android:textSize="20dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="60dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+        <Button
+            android:id="@+id/rightBtn"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/white"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+
 
 
 
